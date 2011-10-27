@@ -1,0 +1,15 @@
+ZOTERO INSTALLER
+================
+Copyright 2011 Sebastiaan Mathot
+<http://www.cogsci.nl/>
+
+ABOUT
+=====
+This is an automated installer that will install Zotero standalone on a Linux
+system.
+
+USAGE
+=====
+Download zotero_installer.sh and run it. This will download Zotero standalone,
+extract it into /opt/zotero or /home/[user]/zotero, and create a Zotero menu
+entry.
