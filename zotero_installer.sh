@@ -27,9 +27,9 @@ EXEC=zotero
 
 echo ">>> This script will download and install Zotero standalone on your system."
 echo ">>> Do you want to continue?"
-echo ">>> y/n (default=n)"
+echo ">>> y/n (default=y)"
 read INPUT
-if [ "$INPUT" != "y" ]; then
+if [ "$INPUT" = "n" ]; then
 	echo ">>> Aborting installation"
 	exit 0
 fi
@@ -41,13 +41,11 @@ read INPUT
 if [ "$INPUT" != "g" ]; then
 	echo ">>> Installing locally"
 	DEST="$HOME"
-	MENU_PATH="$HOME/.local/share/applications/zotero.desktop"
-	MENU_URL="https://github.com/smathot/zotero_installer/raw/master/zotero-local.desktop"
+	MENU_PATH="$HOME/.local/share/applications/zotero.desktop"		
 else
 	echo ">>> Installing globally"
 	DEST="/opt"
-	MENU_PATH="/usr/share/applications/zotero.desktop"
-	MENU_URL="https://github.com/smathot/zotero_installer/raw/master/zotero-global.desktop"
+	MENU_PATH="/usr/share/applications/zotero.desktop"	
 fi
 
 
@@ -61,7 +59,7 @@ fi
 echo ">>> Please input your systems architecture (i686 or x86_65)."
 echo ">>> (default=$ARCH)"
 read INPUT
-if [ $INPUT != "" ]; then
+if [ "$INPUT" != "" ]; then
 	ARCH=$INPUT
 fi
 
@@ -78,7 +76,8 @@ if [ $? -ne 0 ]; then
 fi
 
 if [ -d $DEST/$DEST_FOLDER ]; then
-	echo ">>> The destination folder ($DEST/$DEST_FOLDER) exists. Do you want to remove it? (y/n)"
+	echo ">>> The destination folder ($DEST/$DEST_FOLDER) exists. Do you want to remove it?"
+	echo ">>> y/n (default=n)"
 	read INPUT
 	if [ "$INPUT" = "y" ]; then
 		echo ">>> Removing old Zotero installation"		
@@ -111,15 +110,18 @@ if [ $? -ne 0 ]; then
 fi
 
 echo ">>> Creating menu entry"
-echo ">>> Source: $MENU_URL"
-echo ">>> Target file: $MENU_FILE"
-
-wget $MENU_URL -O $MENU_PATH
+echo "[Desktop Entry]
+Name=Zotero
+Comment=Open-source reference manager (standalone version)
+Exec=$DEST/$DEST_FOLDER/zotero
+Icon=accessories-dictionary
+Type=Application
+StartupNotify=true" > $MENU_PATH
 if [ $? -ne 0 ]; then
-	echo ">>> Failed to download menu entry"
+	echo ">>> Failed to create menu entry"
 	echo ">>> Aborting installation, sorry!"
 	exit 1
-fi
+fi	
 
 echo ">>> Done!"
 echo
