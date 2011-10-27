@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Zotero
+Comment="Open-source reference manager (standalone version)"
+__ZOTERO_PATH__
+Icon=accessories-dictionary
+Type=Application
+StartupNotify=true
+Terminal=true
