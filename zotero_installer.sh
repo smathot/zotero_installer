@@ -24,7 +24,6 @@ ARCH="i686"
 TMP="/tmp/zotero.tar.bz2"
 DEST_FOLDER=zotero
 EXEC=zotero
-MENU_URL=""
 
 echo ">>> This script will download and install Zotero standalone on your system."
 echo ">>> Do you want to continue?"
@@ -43,10 +42,12 @@ if [ "$INPUT" != "g" ]; then
 	echo ">>> Installing locally"
 	DEST="$HOME"
 	MENU_PATH="$HOME/.local/share/applications/zotero.desktop"
+	MENU_URL="https://github.com/smathot/zotero_installer/raw/master/zotero-local.desktop"
 else
 	echo ">>> Installing globally"
 	DEST="/opt"
 	MENU_PATH="/usr/share/applications/zotero.desktop"
+	MENU_URL="https://github.com/smathot/zotero_installer/raw/master/zotero-global.desktop"
 fi
 
 
@@ -102,8 +103,7 @@ if [ $? -ne 0 ]; then
 	exit 1
 fi
 
-mv $DEST/$FILTER $DEST/$DEST_FOLDER
-echo "mv $DEST/Zotero_linux-$ARCH $DEST/$DEST_FOLDER"
+mv $DEST/Zotero_linux-$ARCH $DEST/$DEST_FOLDER
 if [ $? -ne 0 ]; then
 	echo ">>> Failed to move Zotero to $DEST/$DEST_FOLDER"
 	echo ">>> Aborting installation, sorry!"
