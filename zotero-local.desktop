@@ -1,8 +1,8 @@
 [Desktop Entry]
 Name=Zotero
 Comment=Open-source reference manager (standalone version)
-TryExec=~/zotero/zotero
-Exec=~/zotero/zotero
+TryExec="~/zotero/zotero"
+Exec="~/zotero/zotero"
 Icon=accessories-dictionary
 Type=Application
 X-GNOME-DocPath=
