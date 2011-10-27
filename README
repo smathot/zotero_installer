@@ -13,3 +13,8 @@ USAGE
 Download zotero_installer.sh and run it. This will download Zotero standalone,
 extract it into /opt/zotero or /home/[user]/zotero, and create a Zotero menu
 entry.
+
+$ wget https://raw.github.com/smathot/zotero_installer/master/zotero_installer.sh \
+	-O /tmp/zotero_installer.sh
+$ chmod +x /tmp/zotero_installer.sh
+$ /tmp/zotero_installer.sh
