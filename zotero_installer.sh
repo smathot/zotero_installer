@@ -42,10 +42,12 @@ if [ "$INPUT" != "g" ]; then
 	echo ">>> Installing locally"
 	DEST="$HOME"
 	MENU_PATH="$HOME/.local/share/applications/zotero.desktop"		
+	MENU_DIR="$HOME/.local/share/applications"
 else
 	echo ">>> Installing globally"
 	DEST="/opt"
-	MENU_PATH="/usr/share/applications/zotero.desktop"	
+	MENU_PATH="/usr/share/applications/zotero.desktop"
+	MENU_DIR="/usr/share/applications"
 fi
 
 
@@ -56,7 +58,7 @@ if [ "$INPUT" != "" ]; then
 	VERSION=$INPUT
 fi
 
-echo ">>> Please input your systems architecture (i686 or x86_65)."
+echo ">>> Please input your systems architecture (i686 or x86_64)."
 echo ">>> (default=$ARCH)"
 read INPUT
 if [ "$INPUT" != "" ]; then
@@ -107,6 +109,11 @@ if [ $? -ne 0 ]; then
 	echo ">>> Failed to move Zotero to $DEST/$DEST_FOLDER"
 	echo ">>> Aborting installation, sorry!"
 	exit 1
+fi
+
+if [ -f $MENU_DIR ]; then
+	echo ">>> Creating $MENU_DIR"
+	mkdir $MENU_DIR
 fi
 
 echo ">>> Creating menu entry"
