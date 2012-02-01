@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Zotero installer
-# Copyright 2011 Sebastiaan Mathot
+# Copyright 2011-2012 Sebastiaan Mathot
 # <http://www.cogsci.nl/>
 #
 # This file is part of qnotero.
