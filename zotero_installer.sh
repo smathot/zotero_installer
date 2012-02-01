@@ -19,7 +19,7 @@
 # You should have received a copy of the GNU General Public License
 # along with qnotero.  If not, see <http://www.gnu.org/licenses/>.
 
-VERSION="3.0b2.1"
+VERSION="3.0"
 ARCH="i686"
 TMP="/tmp/zotero.tar.bz2"
 DEST_FOLDER=zotero
@@ -134,3 +134,4 @@ echo ">>> Done!"
 echo
 echo ">>> Don't forget to check out Qnotero, the Zotero sidekick!"
 echo ">>> URL: http://www.cogsci.nl/qnotero"
+
