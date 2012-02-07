@@ -5,21 +5,21 @@
 # <http://www.cogsci.nl/>
 #
 # This file is part of qnotero.
-# 
+#
 # qnotero is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
 # (at your option) any later version.
-# 
+#
 # qnotero is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
-# 
+#
 # You should have received a copy of the GNU General Public License
 # along with qnotero.  If not, see <http://www.gnu.org/licenses/>.
 
-VERSION="3.0"
+VERSION="3.0.1"
 ARCH="i686"
 TMP="/tmp/zotero.tar.bz2"
 DEST_FOLDER=zotero
@@ -41,7 +41,7 @@ read INPUT
 if [ "$INPUT" != "g" ]; then
 	echo ">>> Installing locally"
 	DEST="$HOME"
-	MENU_PATH="$HOME/.local/share/applications/zotero.desktop"		
+	MENU_PATH="$HOME/.local/share/applications/zotero.desktop"
 	MENU_DIR="$HOME/.local/share/applications"
 else
 	echo ">>> Installing globally"
@@ -82,13 +82,13 @@ if [ -d $DEST/$DEST_FOLDER ]; then
 	echo ">>> y/n (default=n)"
 	read INPUT
 	if [ "$INPUT" = "y" ]; then
-		echo ">>> Removing old Zotero installation"		
+		echo ">>> Removing old Zotero installation"
 		rm -Rf $DEST/$DEST_FOLDER
 		if [ $? -ne 0 ]; then
 			echo ">>> Failed to remove old Zotero installation"
 			echo ">>> Aborting installation, sorry!"
 			exit 1
-		fi		
+		fi
 	else
 		echo ">>> Aborting installation"
 	fi
@@ -128,7 +128,7 @@ if [ $? -ne 0 ]; then
 	echo ">>> Failed to create menu entry"
 	echo ">>> Aborting installation, sorry!"
 	exit 1
-fi	
+fi
 
 echo ">>> Done!"
 echo
