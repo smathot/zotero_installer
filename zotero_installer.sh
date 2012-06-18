@@ -91,6 +91,7 @@ if [ -d $DEST/$DEST_FOLDER ]; then
 		fi
 	else
 		echo ">>> Aborting installation"
+		exit 0
 	fi
 fi
 
