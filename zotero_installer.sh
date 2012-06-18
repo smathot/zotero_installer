@@ -19,7 +19,7 @@
 # You should have received a copy of the GNU General Public License
 # along with qnotero.  If not, see <http://www.gnu.org/licenses/>.
 
-VERSION="3.0.6"
+VERSION="3.0.7"
 ARCH="i686"
 TMP="/tmp/zotero.tar.bz2"
 DEST_FOLDER=zotero
