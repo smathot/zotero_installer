@@ -19,8 +19,12 @@
 # You should have received a copy of the GNU General Public License
 # along with qnotero.  If not, see <http://www.gnu.org/licenses/>.
 
-VERSION="3.0.7"
-ARCH="i686"
+VERSION="3.0.8"
+if [ `uname -m` == "x86_64" ]; then
+	ARCH="x86_64"
+else
+	ARCH="i686"
+fi
 TMP="/tmp/zotero.tar.bz2"
 DEST_FOLDER=zotero
 EXEC=zotero
