@@ -1,15 +1,15 @@
-ZOTERO INSTALLER
-================
+ZOTERO STANDALONE INSTALLER FOR LINUX
+=====================================
 Copyright 2011-2012 Sebastiaan Mathot
 <http://www.cogsci.nl/>
 
 ABOUT
 =====
 This is an automated installer that will install Zotero standalone on a Linux
-system.
+system. An Ubuntu package based on the installer is also provided (see below).
 
-USAGE
-=====
+USING THE INSTALLER
+===================
 Download zotero_installer.sh and run it. This will download Zotero standalone,
 extract it into /opt/zotero or /home/[user]/zotero, and create a Zotero menu
 entry.
@@ -18,3 +18,17 @@ $ wget https://raw.github.com/smathot/zotero_installer/master/zotero_installer.s
 	-O /tmp/zotero_installer.sh
 $ chmod +x /tmp/zotero_installer.sh
 $ /tmp/zotero_installer.sh
+
+USING THE UBUNTU PPA
+====================
+Ubuntu users can install Zotero standalone from the Cogsci.nl PPA
+<https://launchpad.net/~smathot/+archive/cogscinl>. The debian package is simply
+a wrapper around the automated installer, but may be more convenient with respect
+to updates etc.
+
+To install Zotero standalone from the PPA, please run the following commands in a
+terminal:
+
+$ sudo add-apt-repository ppa:smathot/cogscinl
+$ sudo apt-get update
+$ sudo apt-get install zotero-standalone
