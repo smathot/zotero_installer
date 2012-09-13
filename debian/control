@@ -1,0 +1,12 @@
+Source: zotero-standalone
+Section: science
+Priority: extra
+Maintainer: Sebastiaan Mathot <s.mathot@cogsci.nl>
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.9.3
+Homepage: http://www.zotero.org/
+
+Package: zotero-standalone
+Architecture: all
+Depends: ${misc:Depends}
+Description: Zotero Standalone is a free reference manager

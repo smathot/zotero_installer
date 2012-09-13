@@ -1,0 +1,8 @@
+Format: Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: zotero-standalone
+Maintainer-Contact: Sebastiaan Mathot <s.mathot@cogsci.nl>
+Source: http://www.zotero.org
+
+Files: *
+Copyright: 2012, Zotero Development Team
+License: GNU Affero General Public License 3
