@@ -31,8 +31,12 @@ EXEC=zotero
 DEST="/opt"
 MENU_PATH="/usr/share/applications/zotero.desktop"
 MENU_DIR="/usr/share/applications"
+EXEC_PATH="/usr/bin/zotero"
 
 URL="http://download.zotero.org/standalone/$VERSION/Zotero-${VERSION}_linux-$ARCH.tar.bz2"
+
+echo ">>> Downloading Zotero standalone $VERSION for $ARCH"
+echo ">>> URL: $URL"
 
 wget $URL -O $TMP
 if [ $? -ne 0 ]; then
@@ -47,6 +51,9 @@ if [ -d $DEST/$DEST_FOLDER ]; then
 	exit 1
 fi
 
+echo ">>> Extracting Zotero"
+echo ">>> Target folder: $DEST/$DEST_FOLDER"
+
 tar -xpf $TMP -C $DEST
 if [ $? -ne 0 ]; then
 	echo ">>> Failed to extract Zotero"
@@ -60,6 +67,8 @@ if [ $? -ne 0 ]; then
 	echo ">>> Aborting installation, sorry!"
 	exit 1
 fi
+
+echo ">>> Creating menu entry"
 
 if [ -f $MENU_DIR ]; then
 	echo ">>> Creating $MENU_DIR"
@@ -79,3 +88,13 @@ if [ $? -ne 0 ]; then
 	exit 1
 fi
 
+echo ">>> Creating startup script"
+echo "#!/bin/bash
+cd /opt/zotero
+./zotero" > $EXEC_PATH
+chmod +x $EXEC_PATH
+
+echo ">>> Done!"
+echo
+echo ">>> Don't forget to check out Qnotero, the Zotero sidekick!"
+echo ">>> URL: http://www.cogsci.nl/qnotero"

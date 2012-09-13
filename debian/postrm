@@ -19,5 +19,10 @@
 # You should have received a copy of the GNU General Public License
 # along with qnotero.  If not, see <http://www.gnu.org/licenses/>.
 
+echo ">>> Removing /opt/zotero"
 rm -Rf /opt/zotero
+echo ">>> Removing zotero desktop file"
 rm /usr/share/applications/zotero.desktop
+echo ">>> Removing zotero startup script"
+rm /usr/bin/zotero
+echo ">>> Done!"
