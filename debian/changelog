@@ -1,3 +1,9 @@
+zotero-standalone (4.0.6-ubuntu1) precise; urgency=low
+
+  * Update for 4.0.6
+
+ -- Sebastiaan Mathot <s.mathot@cogsci.nl>  Mon, 22 Apr 2013 10:54:33 +0200
+
 zotero-standalone (4.0.5-ubuntu1) precise; urgency=low
 
   * Update for 4.0.5
