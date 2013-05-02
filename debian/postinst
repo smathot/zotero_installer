@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Zotero installer
-# Copyright 2011-2012 Sebastiaan Mathot
+# Copyright 2011-2013 Sebastiaan Mathot
 # <http://www.cogsci.nl/>
 #
 # This file is part of qnotero.
@@ -19,7 +19,7 @@
 # You should have received a copy of the GNU General Public License
 # along with qnotero.  If not, see <http://www.gnu.org/licenses/>.
 
-VERSION="4.0.6"
+VERSION="4.0.8"
 if [ `uname -m` == "x86_64" ]; then
 	ARCH="x86_64"
 else
@@ -45,8 +45,13 @@ if [ $? -ne 0 ]; then
 	exit 1
 fi
 
+if [ ! -d $DEST ]; then
+	echo ">>> The destination does not exist. Creating."
+	mkdir $DEST
+fi
+
 if [ -d $DEST/$DEST_FOLDER ]; then
-	echo ">>> The destination folder ($DEST/$DEST_FOLDER) exist"
+	echo ">>> The destination folder ($DEST/$DEST_FOLDER) exists"
 	echo ">>> Aborting installation, sorry!"
 	exit 1
 fi

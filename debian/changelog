@@ -1,3 +1,10 @@
+zotero-standalone (4.0.8-ubuntu1) raring; urgency=low
+
+  * Update for 4.0.8
+  * Create /opt if it does not exist
+
+ -- Sebastiaan Mathot <sebastiaan@zebrafish>  Thu, 02 May 2013 13:55:54 +0200
+
 zotero-standalone (4.0.6-ubuntu1) precise; urgency=low
 
   * Update for 4.0.6
