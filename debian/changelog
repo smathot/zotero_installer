@@ -1,3 +1,9 @@
+zotero-standalone (4.0.9-ubuntu1) raring; urgency=low
+
+  * Update for 4.0.9
+
+ -- Sebastiaan Mathot <s.mathot@cogsci.nl>  Mon, 22 Jul 2013 12:41:20 +0200
+
 zotero-standalone (4.0.8-ubuntu1) raring; urgency=low
 
   * Update for 4.0.8
