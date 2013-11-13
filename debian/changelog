@@ -1,3 +1,27 @@
+zotero-standalone (4.0.15-ubuntu1) saucy; urgency=low
+
+  * Update for 4.0.15
+
+ -- Sebastiaan Mathot <s.mathot@cogsci.nl>  Wed, 13 Nov 2013 16:40:25 +0100
+
+zotero-standalone (4.0.14-ubuntu1) saucy; urgency=low
+
+  * Update for 4.0.14
+
+ -- Sebastiaan Mathot <s.mathot@cogsci.nl>  Fri, 08 Nov 2013 18:02:43 +0100
+
+zotero-standalone (4.0.13-ubuntu1) saucy; urgency=low
+
+  * Update for 4.0.13
+
+ -- Sebastiaan Mathot <s.mathot@cogsci.nl>  Wed, 06 Nov 2013 17:17:53 +0100
+
+zotero-standalone (4.0.11-ubuntu1) raring; urgency=low
+
+  * Update for 4.0.11
+
+ -- Sebastiaan Mathot <s.mathot@cogsci.nl>  Mon, 19 Aug 2013 11:29:33 +0200
+
 zotero-standalone (4.0.9-ubuntu1) raring; urgency=low
 
   * Update for 4.0.9
