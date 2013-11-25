@@ -1,3 +1,9 @@
+zotero-standalone (4.0.16-ubuntu1) saucy; urgency=low
+
+  * Update for 4.0.16
+
+ -- Sebastiaan Mathot <s.mathot@cogsci.nl>  Mon, 25 Nov 2013 18:23:21 +0100
+
 zotero-standalone (4.0.15-ubuntu1) saucy; urgency=low
 
   * Update for 4.0.15
