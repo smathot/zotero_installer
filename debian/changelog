@@ -1,3 +1,9 @@
+zotero-standalone (4.0.20-ubuntu1) trusty; urgency=medium
+
+  * Update for 4.0.20
+
+ -- Sebastiaan Mathot <s.mathot@cogsci.nl>  Tue, 13 May 2014 09:51:06 +0200
+
 zotero-standalone (4.0.19-ubuntu1) saucy; urgency=low
 
   * Update for 4.0.19
