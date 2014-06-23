@@ -1,3 +1,9 @@
+zotero-standalone (4.0.21.2-ubuntu1) trusty; urgency=medium
+
+  * Update for 4.0.21.2
+
+ -- Sebastiaan Mathot <s.mathot@cogsci.nl>  Mon, 23 Jun 2014 09:47:03 +0200
+
 zotero-standalone (4.0.20-ubuntu1) trusty; urgency=medium
 
   * Update for 4.0.20
