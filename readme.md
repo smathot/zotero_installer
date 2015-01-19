@@ -1,6 +1,6 @@
 # Zotero standalone installer for Linux
 
-Copyright 2011-2014 Sebastiaan Mathôt
+Copyright 2011-2015 Sebastiaan Mathôt
 
 - <http://www.cogsci.nl/smathot>
 - <http://www.cogsci.nl/qnotero>
@@ -26,7 +26,7 @@ To install Zotero standalone from the PPA, please run the following commands in 
 	sudo add-apt-repository ppa:smathot/cogscinl
 	sudo apt-get update
 	sudo apt-get install zotero-standalone
-	
+
 ## License
 
 This installer falls under the General Public License v3. For more information, see the file `COPYING` or visit <http://www.gnu.org/licenses/gpl.html>.
