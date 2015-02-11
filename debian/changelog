@@ -1,3 +1,9 @@
+zotero-standalone (4.0.26-ubuntu1) utopic; urgency=medium
+
+  * Update for 4.0.26
+
+ -- Sebastiaan Mathot <sebastiaan@mantis>  Wed, 11 Feb 2015 14:04:46 +0100
+
 zotero-standalone (4.0.25.2-ubuntu1) utopic; urgency=medium
 
   * Update for 4.0.25.2
