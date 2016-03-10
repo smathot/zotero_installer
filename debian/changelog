@@ -1,3 +1,9 @@
+zotero-standalone (4.0.29.2-ubuntu1) wily; urgency=medium
+
+  * Update for 4.0.29.2
+
+ -- Sebastiaan Mathot <sebastiaan@mantis>  Thu, 10 Mar 2016 09:36:16 +0100
+
 zotero-standalone (4.0.28-ubuntu1) vivid; urgency=medium
 
   * Update for 4.0.28
