@@ -1,3 +1,10 @@
+zotero-standalone (4.0.29.10-ubuntu1) xenial; urgency=medium
+
+  * Update for 4.0.29.10
+  * Use real Zotero icon
+
+ -- Sebastiaan Mathot <sebastiaan@mantis>  Sat, 24 Sep 2016 11:34:35 +0200
+
 zotero-standalone (4.0.29.5-ubuntu1) wily; urgency=medium
 
   * Update for 4.0.29.5
