@@ -126,7 +126,7 @@ echo "[Desktop Entry]
 Name=Zotero
 Comment=Open-source reference manager (standalone version)
 Exec=$DEST/$DEST_FOLDER/zotero
-Icon=$DEST/$DEST_FOLDER/zotero/chrome/icons/default/default48.png
+Icon=$DEST/$DEST_FOLDER/chrome/icons/default/default48.png
 Type=Application
 StartupNotify=true" > $MENU_PATH
 if [ $? -ne 0 ]; then
