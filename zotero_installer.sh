@@ -19,7 +19,7 @@
 # You should have received a copy of the GNU General Public License
 # along with qnotero.  If not, see <http://www.gnu.org/licenses/>.
 
-VERSION="4.0.29.10"
+VERSION="5.0.4"
 if [ `uname -m` == "x86_64" ]; then
 	ARCH="x86_64"
 else
@@ -69,7 +69,7 @@ if [ "$INPUT" != "" ]; then
 	ARCH=$INPUT
 fi
 
-URL="http://download.zotero.org/standalone/$VERSION/Zotero-${VERSION}_linux-$ARCH.tar.bz2"
+URL="https://download.zotero.org/client/release/${VERSION}/Zotero-${VERSION}_linux-${ARCH}.tar.bz2"
 
 echo ">>> Downloading Zotero standalone $VERSION for $ARCH"
 echo ">>> URL: $URL"
