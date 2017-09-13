@@ -1,3 +1,9 @@
+zotero-standalone (5.0.18-ubuntu1) zesty; urgency=medium
+
+  * Update for 5.0.18
+
+ -- Sebastiaan Mathot <sebastiaan@mantis>  Wed, 13 Sep 2017 16:56:43 +0200
+
 zotero-standalone (5.0.17-ubuntu1) zesty; urgency=medium
 
   * Update for 5.0.17
