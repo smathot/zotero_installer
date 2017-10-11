@@ -1,4 +1,10 @@
-zotero-standalone (5.0.21-ubuntu1) artsy; urgency=medium
+zotero-standalone (5.0.22-ubuntu1) artful; urgency=medium
+
+  * Update for 5.0.22
+
+ -- Sebastiaan Mathot <sebastiaan@zebrafish>  Wed, 11 Oct 2017 09:44:40 +0200
+
+zotero-standalone (5.0.21-ubuntu2) artful; urgency=medium
 
   * Update for 5.0.21
 
