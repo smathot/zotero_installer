@@ -1,3 +1,15 @@
+zotero-standalone (5.0.37-ubuntu1) artful; urgency=medium
+
+  * Update for 5.0.37
+
+ -- Sebastiaan Mathot <sebastiaan@zebrafish>  Wed, 21 Mar 2018 10:33:29 +0100
+
+zotero-standalone (5.0.34-ubuntu1) artful; urgency=medium
+
+  * Update for 5.0.34
+
+ -- Sebastiaan Mathot <sebastiaan@zebrafish>  Mon, 22 Jan 2018 15:32:04 +0100
+
 zotero-standalone (5.0.29-ubuntu1) artful; urgency=medium
 
   * Update for 5.0.29
