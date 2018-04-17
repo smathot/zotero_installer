@@ -1,6 +1,6 @@
 # Zotero standalone installer for Linux
 
-Copyright 2011-2016 Sebastiaan Mathôt
+Copyright 2011-2018 Sebastiaan Mathôt
 
 - <http://www.cogsci.nl/smathot>
 - <http://www.cogsci.nl/qnotero>

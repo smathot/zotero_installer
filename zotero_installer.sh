@@ -19,7 +19,7 @@
 # You should have received a copy of the GNU General Public License
 # along with qnotero.  If not, see <http://www.gnu.org/licenses/>.
 
-VERSION="5.0.37"
+VERSION="5.0.45"
 if [ `uname -m` == "x86_64" ]; then
 	ARCH="x86_64"
 else
