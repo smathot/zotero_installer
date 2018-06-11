@@ -1,3 +1,9 @@
+zotero-standalone (5.0.48-ubuntu1) bionic; urgency=medium
+
+  * Update for 5.0.48
+
+ -- Sebastiaan Mathot <sebastiaan@zebrafish>  Mon, 11 Jun 2018 09:33:36 +0200
+
 zotero-standalone (5.0.47-ubuntu1) bionic; urgency=medium
 
   * Update for 5.0.47
