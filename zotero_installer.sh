@@ -22,8 +22,10 @@
 VERSION="5.0.48"
 if [ `uname -m` == "x86_64" ]; then
 	ARCH="x86_64"
+  VERSION_SHA256_HASH=7cb871894f1de168c0e486d2d48fc8524d23453198a2b834c23d958abd63443d
 else
 	ARCH="i686"
+  VERSION_SHA256_HASH=24f66641bc0bebc9e7e1414bdb03050e6fde7d6939307b17afc3d1f349d5646d
 fi
 TMP="/tmp/zotero.tar.bz2"
 DEST_FOLDER=zotero
@@ -77,6 +79,14 @@ echo ">>> URL: $URL"
 wget $URL -O $TMP
 if [ $? -ne 0 ]; then
 	echo ">>> Failed to download Zotero"
+	echo ">>> Aborting installation, sorry!"
+	exit 1
+fi
+# Check integrity
+
+NEW_HASH=$(sha256sum $TMP | awk '{print $1}')
+if [ $VERSION_SHA256_HASH != $NEW_HASH ]; then
+  echo ">>> Zotero download file corrupted"
 	echo ">>> Aborting installation, sorry!"
 	exit 1
 fi
