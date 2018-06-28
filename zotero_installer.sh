@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Zotero installer
-# Copyright 2011-2013 Sebastiaan Mathot
+# Copyright 2011-2018 Sebastiaan Mathot
 # <http://www.cogsci.nl/>
 #
 # This file is part of qnotero.
@@ -76,7 +76,7 @@ URL="https://download.zotero.org/client/release/${VERSION}/Zotero-${VERSION}_lin
 echo ">>> Downloading Zotero standalone $VERSION for $ARCH"
 echo ">>> URL: $URL"
 
-wget $URL -O $TMP
+[[ ! -f $TMP ]] && wget $URL -O $TMP
 if [ $? -ne 0 ]; then
 	echo ">>> Failed to download Zotero"
 	echo ">>> Aborting installation, sorry!"
